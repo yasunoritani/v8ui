@@ -166,7 +166,7 @@ MCPはAnthropicが開発したオープンプロトコルで、LLM（大規模�
 
 ### Min-DevKitライセンス
 
-本プロジェクトでは**Min-DevKit**（https://github.com/Cycling74/min-devkit）を使用しています。
+本プロジェクトでは**[Min-DevKit](https://github.com/Cycling74/min-devkit)**を使用しています。
 
 Min-DevKitはMITライセンスの下で提供されています：
 

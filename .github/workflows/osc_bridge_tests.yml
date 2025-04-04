@@ -335,5 +335,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: prNumber,
-              body: `## OSC Bridge Test Results on ${{ matrix.os }}\n\n### テスト結果概要\n- 従来のテスト (Min-DevKit依存): ${{ steps.legacy_tests.outcome == 'success' ? '✅ 成功' : '❌ 失敗' }}\n- スタンドアロンテスト (Min-DevKit非依存): ${{ steps.standalone_tests.outcome == 'success' ? '✅ 成功' : '❌ 失敗' }}\n\n\`\`\`\n${summary}\n\`\`\`\n\n詳細は添付されたテスト結果を確認してください。`
+              body: `## OSC Bridge Test Results on ${{ matrix.os }}\n\n### テスト結果概要\n- 従来のテスト (Min-DevKit依存): ${{ steps.legacy_tests.outcome == 'success' && '✅ 成功' || '❌ 失敗' }}\n- スタンドアロンテスト (Min-DevKit非依存): ${{ steps.standalone_tests.outcome == 'success' && '✅ 成功' || '❌ 失敗' }}\n\n\`\`\`\n${summary}\n\`\`\`\n\n詳細は添付されたテスト結果を確認してください。`
             });
